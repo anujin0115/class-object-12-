@@ -17,7 +17,7 @@ class Book:
         self.author=author
         self.price=price
     def display(self):
-        print(f"Title:{self.title}, Author:{self.author}, Price:${self.price}")
+        print(f"Title: {self.title}, Author: {self.author}, Price: ${self.price}")
 
 
 # Exercise 3
