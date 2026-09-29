@@ -8,9 +8,6 @@ class Rectangle:
         return self.width*self.length
     def perimeter(self):
         return 2*(self.width+self.length)
-
-
-
 class Book:
     def __init__(self,title,author,price):
         self.title=title
@@ -37,4 +34,6 @@ class ShoppingCart:
         self.ret=[]
 
         for p in range(len(self.cart)):
-            return f"{self.cart[p]}: ${self.prices[p]}"
+            self.ret.append( f"{self.cart[p]}: ${self.prices[p]}")
+            return "\n".join(self.ret)
+
