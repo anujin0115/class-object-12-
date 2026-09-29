@@ -33,7 +33,6 @@ class ShoppingCart:
     def show_items(self):
         self.ret=[]
 
-        for p in range(len(self.cart)):
-            self.ret.append( f"{self.cart[p]}: ${self.prices[p]}")
-            return "\n".join(self.ret)
+      for p in range(len(self.cart)):
+            print( f"\n{self.cart[p]}: ${self.prices[p]}")
 
