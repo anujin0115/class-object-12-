@@ -24,6 +24,7 @@ class ShoppingCart:
         self.cart=[]
         self.prices=[]
 
+
     def add_item(self,name,price):
         self.cart.append(name)
         self.prices.append(price)
@@ -33,5 +34,8 @@ class ShoppingCart:
             self.amount+=i
         return self.amount
     def show_items(self):
+        self.ret=[]
+
         for p in range(len(self.cart)):
-            print(f"{self.cart[p]}: ${self.prices[p]}")
+            self.ret.append(f"{self.cart[p]}: ${self.prices[p]}")
+        return  self.ret
