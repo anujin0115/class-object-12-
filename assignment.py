@@ -1,6 +1,13 @@
 # Exercise 1
+
 class Rectangle:
-    pass
+    def __init__(self, length, width):
+        self.length=length
+        self.width=width
+    def area(self):
+        return self.width*self.length
+    def perimeter(self):
+        return 2*(self.width+self.length)
 
 # Exercise 2
 class Book:
