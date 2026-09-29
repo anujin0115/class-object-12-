@@ -17,7 +17,7 @@ class Book:
         self.author=author
         self.price=price
     def display(self):
-        print(f"Title: {self.title}, Author: {self.author}, Price: ${self.price}")
+        return f"Title: {self.title}, Author: {self.author}, Price: ${self.price}"
 
 class ShoppingCart:
     def __init__(self):
@@ -37,5 +37,4 @@ class ShoppingCart:
         self.ret=[]
 
         for p in range(len(self.cart)):
-            self.ret.append(f"{self.cart[p]}: ${self.prices[p]}")
-        return  self.ret
+            return f"{self.cart[p]}: ${self.prices[p]}"
