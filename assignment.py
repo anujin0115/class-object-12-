@@ -34,4 +34,4 @@ class ShoppingCart:
         self.ret=[]
         for p in range(len(self.cart)):
             self.ret.append( f"{self.cart[p]}: ${self.prices[p]}")
-            return "\n".join(self.ret)
+        return "\n".join(self.ret)
