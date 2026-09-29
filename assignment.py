@@ -9,7 +9,7 @@ class Rectangle:
     def perimeter(self):
         return 2*(self.width+self.length)
 
-# Exercise 2
+
 
 class Book:
     def __init__(self,title,author,price):
@@ -19,7 +19,21 @@ class Book:
     def display(self):
         print(f"Title: {self.title}, Author: {self.author}, Price: ${self.price}")
 
-
-# Exercise 3
 class ShoppingCart:
-    pass
+    def __init__(self):
+        self.cart=[]
+        self.prices=[]
+        self.total=0
+    def add_item(self,name,price):
+        self.cart.append(name)
+        self.prices.append(price)
+    def total_price(self):
+        self.total+=1
+        self.amount=0
+        for i in self.prices:
+            self.amount+=i
+        return self.amount
+    def show_items(self):
+        for p in range(self.total):
+            print(f"{self.cart[p]}: ${self.prices[p]}")
+        
