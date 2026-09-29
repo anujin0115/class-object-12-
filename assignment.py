@@ -10,7 +10,7 @@ class Rectangle:
         return 2*(self.width+self.length)
 
 class Book:
-    def __init__(self, title ,author, price):
+    def __init__(self,title,author,price):
         self.title=title
         self.author=author
         self.price=price
@@ -22,16 +22,16 @@ class ShoppingCart:
         self.cart=[]
         self.prices=[]
         self.total=0
-    def add_item(self, name, price):
+    def add_item(self,name,price):
         self.cart.append(name)
         self.prices.append(price)
+        self.total += 1
     def total_price(self):
-        self.total+=1
+
         self.amount=0
         for i in self.prices:
             self.amount+=i
         return self.amount
     def show_items(self):
-        for p in range(self.total-1):
+        for p in range(self.total):
             print(f"{self.cart[p]}: ${self.prices[p]}")
-        
